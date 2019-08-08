@@ -28,7 +28,7 @@ new Vue ({
             const plus = especial ? 5:0
             const hurt = this.getRandom(min + plus, max + plus)
             this[prop] = Math.max(this[prop] - hurt, 0)
-            this.registerLog('${source} atingiu ${target} com ${hurt}.', cls )
+            this.registerLog(`${source} atingiu ${target} com ${hurt}.`, cls )
         },
         healAndHurt(){
             this.heal(10, 15)
